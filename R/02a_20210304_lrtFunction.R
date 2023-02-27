@@ -7,7 +7,7 @@
 #   6. -2log(LR)*sc should follow a chi-square 1 distribution under the null
 lrtTheta <- function(response, eta.shape, thetaVar, thetaNull = 0, lb = -100, ub = 100){
   # source log-likelihood
-  source(here::here("code/01c_20200312_loglikFunction.R"), local = TRUE)
+  source(here::here("R/01c_20200312_loglikFunction.R"), local = TRUE)
   
   # eta = vector of parameters
   p1 = eta.shape[["p1"]]; alpha1 = eta.shape[["alpha1"]]; beta1 = eta.shape[["beta1"]]

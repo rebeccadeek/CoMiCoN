@@ -64,7 +64,7 @@ optTheta <- function(x, lower, upper, p1, alpha1, beta1, p2, alpha2, beta2, prec
   s4 <- which(x1 == 0 & x2 == 0) # number of x1 == 0 and x2 == 0
   
   # source the distribution functions
-  source(here::here("code/00b_20200304_distributionFunctions.R"), local = TRUE)
+  source(here::here("R/00b_20200304_distributionFunctions.R"), local = TRUE)
   
   # CDF for each x_i
   F1 <- Fx(x1, p1, alpha1, beta1); F2 <- Fx(x2, p2, alpha2, beta2)
