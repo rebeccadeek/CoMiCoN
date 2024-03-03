@@ -1,0 +1,22 @@
+Package: CoMiCoN
+Title: Copulas with Mixture Margins for Covariation Networks
+Version: 0.0.0.9000
+Authors@R: 
+    person("Rebecca A", "Deek", , "rebecca.deek@pennmedicine.upenn.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8783-4694"))
+Description: CoMiCoN is an R package for fitting bivariate copula models with mixture margins to zero-inflated proportion data. The package implements two-stage estimation of the marginal and copula parameters, as well as a two-stage likelihood ratio test for the copula dependence parameter. The estimated dependence parameters can be used to build covariation networks.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    furrr,
+    future,
+    gamlss,
+    gamlss.dist,
+    janitor,
+    maxLik,
+    Rmpfr,
+    stats,
+    utils
