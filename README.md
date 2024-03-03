@@ -8,8 +8,9 @@ CoMiCoN is an R package for microbial covariation and network analysis. It imple
 
 ## About
 
-CoMiCoN uses a mixture margin bivariate copula model for a pair of zero-inflated microbial relative abundances ($X_i$, $X_j$): 
-$F(x_i, x_j; \boldsymbol{\gamma}_i, \boldsymbol{\gamma}_j, \theta_{ij}) = C(F_i(x_i; \boldsymbol{\gamma}_i), F_j(x_j; \boldsymbol{\gamma}_j); \theta_{ij})$
+CoMiCoN uses a mixture margin copula model for a pair of zero-inflated microbial relative abundances ($X_i$, $X_j$):
+
+$$ F(x_i, x_j; \boldsymbol{\gamma}_i, \boldsymbol{\gamma}_j, \theta_{ij}) = C(F_i(x_i; \boldsymbol{\gamma}_i), F_j(x_j; \boldsymbol{\gamma}_j); \theta_{ij}) $$
 
 The copula dependence parameter $\theta$ captures the covariation for the pair of microbes and can be used to build covariation networks. The package provides implementation of a two-stage maximum likelihood estimation (tsMLE) procedure and a two-stage likelihood ratio test (tsLRT) for the CoMiCoN model.
 
